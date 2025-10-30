@@ -39,7 +39,7 @@ aur kabhi kam seekhta hai
 * Underfitting - Model ne data achhe se seekha hi nahi .
              - Model ne data samjha hi nahi.
 
-* Overfitting -  Model ne data itna yaad kar liya ki naya question dekhke confuse
+* Overfitting -  Model ne data itna yaad kar liya ki naya question dekhke confuse ho gya.
             -  Model training data pe perfect, par new data pe fail.
 
 
@@ -94,3 +94,70 @@ Phir naye user ke liye predict karta hai — “Agar ye itna comedy dekhta hai, 
 # 6. SVM (Support Vector Machine)
 - ye classification ke liye bana tha — jaise: Ye image cat ki hai ya dog ki?
 - SVM ek boundary line(hyperplane) banata hai jo classes ko alag karta hai
+
+
+
+# 7. Decision Tree
+- It is a Supervised Machine Learning used for both Classification aur Regression.
+* Yeh algorithm ek tree structure me decisions banata hai:
+        - Root Node: jahan se decision start hota hai
+        - Internal Nodes: jahan condition lagti hai
+        - Leaf Node: final output
+
+* Example : - Bank tmhe credit card dega ya nhi ?
+     Feature: Income , Credit Score , Age
+
+    Tree:-
+                   [Credit Score > 700?]
+                 /             \
+              Yes               No
+             /                    \
+    [Income > 50K?]          Reject Loan
+       /       \
+    Yes         No
+   /             \
+Approve Loan    Reject Loan
+
+* Features:-
+i.Handles both categorical and numerical data.
+ii.Easy to understand and visualize
+
+* Advantages
+
+
+# 7. Bagging and Boosting
+
+* Bagging
+- Original data me se randomly kuch data ko select kro
+- ab random select kiya hua data pe decision tree train karo.
+- jiska majority sabse jyada hoga wahi output hoga.
+- Predictions combine karo:
+        Classification: majority vote
+        Regression: average/mean
+
+    Classification- Jab output category/label ho (jaise Yes/No, 0/1, Cat/Dog)
+    Regression- Jab output numerical value ho (jaise price, age, temperature)
+
+- Original data ka randomly select kiya hua part, jisme same data point repeat ho sakta hai
+
+- Example: Random Forest follows bagging technique
+
+- real life:- Ek question ke liye 10 students independently answer dete hain → majority ka answer final hota hai.
+
+
+* Boosting
+- Pehla tree train karo.
+- Jo points galat predict hue → unko zyaada importance (weight) do.
+- Agla tree sirf un galti points ko better predict karne ki koshish kare.
+- Repeat karte jao → final prediction = sab trees ka weighted combination
+
+- real life:- Ek student step by step apni mistakes  se seekh raha hai → next attempt me galti kam hoti hai
+
+
+
+# 8. Random Forest
+- It is an extension of Decision Tree.
+- It removes the problem of Decision Tree.
+- Decision Tree me hum ek dataset se 1 tree create karte h and random forest me hum multiple tree create karte h and multiple Decision Tree milke forest banata h.
+- Decision Tree me overfitting ka problem tha usko Random Forest solve kar deta h.
+
