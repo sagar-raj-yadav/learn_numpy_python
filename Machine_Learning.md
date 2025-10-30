@@ -220,9 +220,26 @@ Ab in sabka average nikal lo:Ye hi final accuracy hai
 # 11. Logistic Regression
 It is a classification algorithm (ye categorical output (like Yes/No, 0/1, Pass/Fail) predict karta hai)
 
+Yeh raha Linear Regression vs Logistic Regression ka clear aur short difference 👇
+
+Feature	Linear Regression	Logistic Regression
+
+Type	Regression (Continuous output)	Classification (Categorical output)
+Output	Real value (−∞ to +∞)	Probability (0 to 1)
+Function used	Linear function	Sigmoid (logistic) function
+Goal	Predict continuous values (e.g. salary, marks)	Predict class (e.g. pass/fail, spam/not spam)
+Error function	Mean Squared Error (MSE)	Log Loss (Cross Entropy)
+Decision boundary	Straight line	S-shaped (Sigmoid curve)
+Example	Predict house price	Predict whether email is spam or not
+
+
+Short me:
+Linear regression → values predict karta hai
+Logistic regression → class (Yes/No) predict karta hai ✅
 
 # 12. CAP Curve
 - used for classification models
 - 
 
 # 13.XGBoost
+
