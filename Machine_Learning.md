@@ -281,9 +281,10 @@ Jo points is zone se bahar hote hain,
 woh model ko affect karte hain — unhe
 'support vectors' kehte hain
 Ab simple words me graph samjho 👇
+SVR.jpg
 
-
----
+--
+[](SVR.jpg)
 
 🟦 Blue Dots (Data Points)
 
@@ -331,5 +332,6 @@ Model sirf in points ko use karta hai line adjust karne ke liye.
 red–orange dashed lines uske aas-paas ek safe zone (margin) banate hain,
 aur black circled points wahi important points hote hain jo model ko sikhate hain —
 inhe hi Support Vectors kehte hain ✅
+
 
 
