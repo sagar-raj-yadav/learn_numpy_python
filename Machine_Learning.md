@@ -16,6 +16,7 @@ Ex:- Email spam detection , Price prediction ,  Medical field
 
 ii. Unsupervised Learning
 - data are not labelled
+- ,The algorithm finds patterns in the data on its own.
 
 iii. Reinforcement Learning
 Socho tum video game khel rahe ho.
@@ -264,6 +265,7 @@ aur next tree ussi galti ko correct karne ki koshish karta hai.
 
 Ye process baar-baar hoti hai → har naya tree pichle model ke errors ko improve karta hai.
 Result: accuracy badhti jaati hai
+
 
 
 
