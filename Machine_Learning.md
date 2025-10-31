@@ -244,10 +244,27 @@ Ab in sabka average nikal lo:Ye hi final accuracy hai
 
 
 
-# 12. CAP Curve
-- used for classification models
-- 
 
-# 13.XGBoost
+# 12. CAP Curve (Cumulative Accuracy Profile Curve)
+- used for classification models
+- model evaluation graph hai
+jo batata hai ki model kitna accurate aur
+effective hai classification tasks ke liye.
+
+
+ 
+ 
+ # 13.XGBoost
+
+XGBoost ek machine learning 
+algorithm hai jo Decision Trees par based hota hai,
+Socho tumhare paas ek weak model hai jo thoda galat predict karta hai.
+XGBoost us model ki galtiyan (errors) ko sikhta hai —
+aur next tree ussi galti ko correct karne ki koshish karta hai.
+
+Ye process baar-baar hoti hai → har naya tree pichle model ke errors ko improve karta hai.
+Result: accuracy badhti jaati hai
+
+
 
 
