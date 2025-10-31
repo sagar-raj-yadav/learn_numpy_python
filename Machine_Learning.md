@@ -268,5 +268,68 @@ Result: accuracy badhti jaati hai
 
 
 
+# 14. SVR
+SVR is the regression version of SVM.
+SVM is used for classification,
+SVR is used for regression.
+
+"SVR ek line/curve banata hai jiske aas-paas
+ek 'epsilon' ka safe zone hota hai. 
+Jo points us zone ke andar hain unko chhota error 
+maana jata hai (ignore kiya ja sakta hai).
+Jo points is zone se bahar hote hain, 
+woh model ko affect karte hain — unhe
+'support vectors' kehte hain
+Ab simple words me graph samjho 👇
+
+
+---
+
+🟦 Blue Dots (Data Points)
+
+👉 Ye real data hai — jaise actual house prices, marks, ya koi bhi original values.
+
+
+---
+
+🟩 Green Line (SVR Line)
+
+👉 Ye SVR ka prediction hai —
+model ne ye line banayi taaki zyada se zyada blue dots iske paas aayein.
+
+
+---
+
+🔴 Red Dashed Line (Upper Margin)
+
+👉 Ye epsilon ka upper limit hai —
+agar koi point iske andar hai, to uska chhota error ignore kiya jaata hai.
+
+
+---
+
+🟠 Orange Dashed Line (Lower Margin)
+
+👉 Ye epsilon ka lower limit hai —
+iska matlab niche wale errors bhi ignore kiye jaate hain agar ye margin ke andar hain.
+
+
+---
+
+⚫ Black Circle (Support Vectors)
+
+👉 Ye important points hain —
+jo margin ke bahar ya bilkul border par hain.
+Model sirf in points ko use karta hai line adjust karne ke liye.
+
+
+---
+
+💭 Ek line me samjho:
+
+> SVR ek green line banata hai jo data ke beech se jaati hai,
+red–orange dashed lines uske aas-paas ek safe zone (margin) banate hain,
+aur black circled points wahi important points hote hain jo model ko sikhate hain —
+inhe hi Support Vectors kehte hain ✅
 
 
